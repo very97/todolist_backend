@@ -11,7 +11,7 @@ const MONGODB_URI_PROD = process.env.MONGODB_URI_PROD;
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "http://localhost:3000", // frontend 주소
+    origin: "https://celebrated-biscotti-bbeee9.netlify.app/", // frontend 주소
     credentials: true,
   })
 );
