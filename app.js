@@ -11,8 +11,7 @@ const MONGODB_URI_PROD = process.env.MONGODB_URI_PROD;
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin:
-      "https://web-todolist-frontend-m2eb04sr2f3990d9.sel4.cloudtype.app/", // frontend 주소
+    origin: "https://web-todolist-frontend-m2eb04sr2f3990d9.sel4.cloudtype.app", // frontend 주소
     credentials: true,
   })
 );
