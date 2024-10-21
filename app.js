@@ -9,7 +9,12 @@ const app = express();
 const MONGODB_URI_PROD = process.env.MONGODB_URI_PROD;
 //console.log("mongoouri", MONGODB_URI_PROD);
 app.use(bodyParser.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:3000", // frontend 주소
+    credentials: true,
+  })
+);
 
 app.use("/api", indexRouter);
 
